@@ -1,0 +1,15 @@
+.navmenu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.navmenu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
