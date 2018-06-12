@@ -1,12 +1,25 @@
 import React from 'react';
 import Navmenu from '../Navmenu';
+import Logo from '../Logo';
 import './header.css';
 
 
-const Header = () => (
-  <header className="page-header">
+const Header = () => {
+  const menuItems = [
+    {
+      url: '/page-1',
+      title: 'Обо мне',
+    },
+    {
+      url: '/page-2',
+      title: 'Стихи',
+    },
+  ];
+
+  return <header className="page-header">
     <div className="page-header__navmenu">
-      <Navmenu/>
+      <Logo/>
+      <Navmenu items={ menuItems }/>
     </div>
 
     <h2 className="page-header__text">
@@ -16,7 +29,7 @@ const Header = () => (
       <br/>
       Не жди ответа
     </h2>
-  </header>
-);
+  </header>;
+};
 
 export default Header;

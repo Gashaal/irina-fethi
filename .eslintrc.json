@@ -14,6 +14,8 @@
     }
   },
   "rules": {
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "max-len": [1, 100, 4],
+    "valid-jsdoc": 0
   }
 }

@@ -22,13 +22,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 24px;
 }
 
 .page-header__text {
+  font-family: 'Marck Script', cursive;
+  font-size: 32px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  z-index: 2;
+  z-index: 1;
+  margin: 0;
 }
+

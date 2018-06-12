@@ -4,10 +4,10 @@ import logo from './logo.svg';
 
 
 const Logo = () => (
-  <div className="logo">
+  <a className="logo">
     <img src={logo} width="56" height="56"/>
     <h1 className="logo__text">Ирина Фетхи</h1>
-  </div>
+  </a>
 );
 
 export default Logo;

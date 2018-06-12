@@ -1,10 +1,11 @@
 import React from 'react';
+import IconButton from '../IconButton';
 import './search.css';
 
 
 const Search = () => (
   <div className="search">
-    <button className="search__filter-btn">Поиск</button>
+    <IconButton className="search__filter-btn"/>
   </div>
 );
 
