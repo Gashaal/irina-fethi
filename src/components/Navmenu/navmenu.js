@@ -9,9 +9,7 @@ import './navmenu.css';
 class NavMenu extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      items: Object.assign(this.props.items),
-    };
+    this.state = Object.assign({}, props);
   }
 
   clickItem(url) {
@@ -40,12 +38,5 @@ class NavMenu extends React.Component {
     </div>;
   }
 }
-
-NavMenu.propTypes = {
-  items: PropTypes.shape({
-    url: PropTypes.string,
-    title: PropTypes.string,
-  }),
-};
 
 export default NavMenu;
