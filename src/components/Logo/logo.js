@@ -1,13 +1,29 @@
 import React from 'react';
-import './logo.css';
+import styled from 'styled-components';
 import logo from './logo.svg';
 
+const LogoLink = styled.a`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+`;
+
+const LogoImage = styled.img`
+  width: 56px;
+  height: 56px;
+`;
+
+const LogoText = styled.h1`
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+`;
 
 const Logo = () => (
-  <a className="logo">
-    <img src={logo} width="56" height="56"/>
-    <h1 className="logo__text">Ирина Фетхи</h1>
-  </a>
+  <LogoLink>
+    <LogoImage src={logo}/>
+    <LogoText>Ирина Фетхи</LogoText>
+  </LogoLink>
 );
 
 export default Logo;
